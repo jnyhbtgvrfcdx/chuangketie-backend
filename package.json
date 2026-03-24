@@ -1,0 +1,21 @@
+{
+  "name": "chuangketie-backend",
+  "version": "1.0.0",
+  "description": "Mock backend service for 创客贴 website",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": [
+    "express",
+    "mock-api",
+    "chuangketie"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}

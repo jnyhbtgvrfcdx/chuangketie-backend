@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(node \"D:/zmm/创可贴后端借口/src/server.js\")",
+      "Bash(curl -s http://localhost:3000/api/templates)",
+      "Bash(curl -s http://localhost:3000/api/categories.)",
+      "Bash(curl -s \"http://localhost:3000/api/templates/search?kw=简历\")",
+      "Bash(curl -s -X POST http://localhost:3000/api/auth/login -H \"Content-Type: application/json\" -d '{\"username\":\"test\",\"password\":\"123456\"}')",
+      "Bash(curl -s http://localhost:3000/api/templates/tpl-001)",
+      "Bash(curl -s \"http://localhost:3000/api/templates/category/海报\")",
+      "Bash(curl -s -i -X POST http://localhost:3000/api/auth/login -H \"Content-Type: application/json\" -d '{\"username\":\"test\",\"password\":\"wrong\"}')",
+      "Bash(curl -s -i http://localhost:3000/api/auth/info)",
+      "Bash(curl -sG http://localhost:3000/api/templates/search --data-urlencode \"kw=简历\")",
+      "Bash(curl -sG http://localhost:3000/api/templates/category --data-urlencode \"name=海报\")",
+      "Bash(curl -s -i http://localhost:3000/api/templates/not-exist)",
+      "Bash(curl -sG http://localhost:3000/api/templates/search --data-urlencode \"kw=不存在关键词\")",
+      "Bash(curl -s \"http://localhost:3000/api/designs\" -H \"Authorization: Bearer mock-token-test-user\")",
+      "Bash(curl -s -X POST http://localhost:3000/api/designs -H \"Content-Type: application/json\" -H \"Authorization: Bearer mock-token-test-user\" -d '{\"templateId\":\"tpl-003\",\"title\":\"我的618主图\",\"content\":{\"text\":\"爆款直降\"}}')"
+    ]
+  }
+}
