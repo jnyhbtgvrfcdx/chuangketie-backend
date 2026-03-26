@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>创客贴接口总览</title>
+    <link rel="stylesheet" href="/interfaces.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="brand-card">
+          <p class="eyebrow">API ATLAS</p>
+          <h1>创客贴后端接口总览</h1>
+          <p class="brand-copy">一个页面看清当前后端全部接口、鉴权要求与示例参数。</p>
+        </div>
+
+        <div class="sidebar-panel">
+          <label class="field-label" for="searchInput">检索接口</label>
+          <input id="searchInput" class="search-input" type="search" placeholder="搜路径 / 方法 / 模块" />
+        </div>
+
+        <div class="sidebar-panel">
+          <span class="field-label">按模块</span>
+          <div id="groupFilters" class="filter-stack"></div>
+        </div>
+
+        <div class="sidebar-panel">
+          <span class="field-label">按方法</span>
+          <div id="methodFilters" class="filter-row"></div>
+        </div>
+
+        <div class="sidebar-panel compact">
+          <div class="meta-line"><span>页面地址</span><code>/interfaces</code></div>
+          <div class="meta-line"><span>数据来源</span><code>/api/docs/interfaces</code></div>
+          <div class="meta-line"><span>统一响应</span><code>{ code, message, data }</code></div>
+        </div>
+      </aside>
+
+      <main class="content">
+        <header class="hero">
+          <div>
+            <p class="eyebrow">LIGHTWEIGHT EXPRESS DOCS</p>
+            <h2>所有接口都在这里，直接可见。</h2>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-card">
+              <span class="stat-label">接口数</span>
+              <strong id="interfaceCount">--</strong>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">模块数</span>
+              <strong id="groupCount">--</strong>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">需鉴权</span>
+              <strong id="authCount">--</strong>
+            </div>
+          </div>
+        </header>
+
+        <section id="statusBanner" class="status-banner">正在加载接口数据...</section>
+        <section id="interfaceSections" class="interface-sections"></section>
+      </main>
+    </div>
+
+    <template id="interfaceCardTemplate">
+      <article class="interface-card">
+        <button class="interface-summary" type="button">
+          <div class="summary-main">
+            <span class="method-badge"></span>
+            <div>
+              <h3 class="interface-title"></h3>
+              <code class="interface-path"></code>
+            </div>
+          </div>
+          <div class="summary-side">
+            <span class="auth-pill"></span>
+            <span class="expand-indicator">查看详情</span>
+          </div>
+        </button>
+        <div class="interface-detail">
+          <p class="interface-description"></p>
+          <div class="detail-grid">
+            <div>
+              <h4>路径参数</h4>
+              <ul class="detail-list path-params"></ul>
+            </div>
+            <div>
+              <h4>查询参数</h4>
+              <ul class="detail-list query-params"></ul>
+            </div>
+          </div>
+          <div class="detail-block auth-block">
+            <h4>鉴权说明</h4>
+            <p class="auth-text"></p>
+          </div>
+          <div class="detail-block body-block">
+            <h4>请求体示例</h4>
+            <pre class="code-block request-body"></pre>
+          </div>
+          <div class="detail-block">
+            <h4>返回说明</h4>
+            <p class="response-notes"></p>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <script src="/interfaces.js"></script>
+  </body>
+</html>

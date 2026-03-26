@@ -16,7 +16,11 @@
       "Bash(curl -s -i http://localhost:3000/api/templates/not-exist)",
       "Bash(curl -sG http://localhost:3000/api/templates/search --data-urlencode \"kw=不存在关键词\")",
       "Bash(curl -s \"http://localhost:3000/api/designs\" -H \"Authorization: Bearer mock-token-test-user\")",
-      "Bash(curl -s -X POST http://localhost:3000/api/designs -H \"Content-Type: application/json\" -H \"Authorization: Bearer mock-token-test-user\" -d '{\"templateId\":\"tpl-003\",\"title\":\"我的618主图\",\"content\":{\"text\":\"爆款直降\"}}')"
+      "Bash(curl -s -X POST http://localhost:3000/api/designs -H \"Content-Type: application/json\" -H \"Authorization: Bearer mock-token-test-user\" -d '{\"templateId\":\"tpl-003\",\"title\":\"我的618主图\",\"content\":{\"text\":\"爆款直降\"}}')",
+      "Bash(node \"D:/zmm/创客贴项目/创可贴后端接口/src/app.js\")",
+      "WebFetch(domain:localhost)",
+      "Bash(curl -i http://localhost:3000/api/docs/interfaces)",
+      "Bash(curl -i http://localhost:3000/interfaces)"
     ]
   }
 }
