@@ -158,9 +158,6 @@ function createInterfaceCard(item) {
   const path = fragment.querySelector('.interface-path');
   const authPill = fragment.querySelector('.auth-pill');
   const description = fragment.querySelector('.interface-description');
-  const pathParams = fragment.querySelector('.path-params');
-  const queryParams = fragment.querySelector('.query-params');
-  const authText = fragment.querySelector('.auth-text');
   const bodyBlock = fragment.querySelector('.body-block');
   const requestBody = fragment.querySelector('.request-body');
   const responseNotes = fragment.querySelector('.response-notes');
@@ -175,13 +172,7 @@ function createInterfaceCard(item) {
   authPill.textContent = item.authRequired ? '需要鉴权' : '公开接口';
   authPill.classList.add(item.authRequired ? 'protected' : 'public');
   description.textContent = item.description;
-  authText.textContent = item.authRequired
-    ? item.authHint || '需要在请求头中附带 Bearer token。'
-    : '无需鉴权，可直接调用。';
   responseNotes.textContent = item.responseNotes || '无额外说明。';
-
-  fillDetailList(pathParams, item.pathParams, '无路径参数');
-  fillDetailList(queryParams, item.queryParams, '无查询参数');
 
   if (item.requestBodyExample) {
     requestBody.textContent = JSON.stringify(item.requestBodyExample, null, 2);
