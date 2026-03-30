@@ -1,12 +1,21 @@
-const users = require('../data/mockUsers');
+const userStore = require('../data/userStore');
 const { TEST_TOKEN, getTokenFromHeader } = require('../utils/token');
 const { fail } = require('../utils/response');
 
 function findUserByToken(token) {
+  // 测试账号使用固定 token
   if (token === TEST_TOKEN) {
-    return users[0];
+    return userStore.findUserById('user-test-001');
   }
-  return users.find((item) => item.id && token === `mock-token-${item.id}`);
+  
+  // 其他用户使用动态 token
+  // token 格式: mock-token-{userId}
+  if (token.startsWith('mock-token-')) {
+    const userId = token.replace('mock-token-', '');
+    return userStore.findUserById(userId);
+  }
+  
+  return null;
 }
 
 function authMiddleware(req, res, next) {

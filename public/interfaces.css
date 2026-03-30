@@ -415,6 +415,167 @@ body {
   background: rgba(255, 255, 255, 0.03);
 }
 
+/* 操作按钮样式 */
+.detail-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.action-btn:hover {
+  background: rgba(255, 145, 82, 0.15);
+  border-color: rgba(255, 145, 82, 0.4);
+  transform: translateY(-1px);
+}
+
+.action-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.action-btn .btn-icon {
+  font-size: 16px;
+}
+
+/* 测试结果样式 */
+.test-result {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.test-result.testing {
+  background: rgba(100, 150, 255, 0.1);
+  border-color: rgba(100, 150, 255, 0.3);
+}
+
+.test-result.success {
+  background: rgba(135, 217, 160, 0.1);
+  border-color: rgba(135, 217, 160, 0.3);
+}
+
+.test-result.warning {
+  background: rgba(255, 200, 100, 0.1);
+  border-color: rgba(255, 200, 100, 0.3);
+}
+
+.test-result.error {
+  background: rgba(255, 122, 122, 0.1);
+  border-color: rgba(255, 122, 122, 0.3);
+}
+
+.test-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.test-header .status-icon {
+  font-size: 24px;
+}
+
+.test-header .status-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.test-header .duration {
+  margin-left: auto;
+  padding: 4px 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.test-detail {
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.detail-row {
+  margin-bottom: 10px;
+}
+
+.detail-row:last-child {
+  margin-bottom: 0;
+}
+
+.detail-row .label {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.detail-row .value {
+  font-size: 14px;
+  color: var(--text);
+}
+
+.detail-row .value.status-200 {
+  color: var(--success);
+}
+
+.detail-row .value.status-400,
+.detail-row .value.status-401,
+.detail-row .value.status-403,
+.detail-row .value.status-404 {
+  color: var(--danger);
+}
+
+.detail-row .error-msg {
+  color: #ff9999;
+}
+
+.response-preview {
+  margin: 8px 0 0 0;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 12px;
+  color: #d8e2f0;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.loading {
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
 @media (max-width: 1080px) {
   .layout {
     grid-template-columns: 1fr;

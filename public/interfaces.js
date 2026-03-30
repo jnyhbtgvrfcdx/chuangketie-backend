@@ -155,6 +155,9 @@ function createInterfaceCard(item) {
   const bodyBlock = fragment.querySelector('.body-block');
   const requestBody = fragment.querySelector('.request-body');
   const responseNotes = fragment.querySelector('.response-notes');
+  const copyLinkBtn = fragment.querySelector('.copy-link');
+  const testApiBtn = fragment.querySelector('.test-api');
+  const testResult = fragment.querySelector('.test-result');
 
   methodBadge.textContent = item.method;
   methodBadge.classList.add(item.method.toLowerCase());
@@ -179,6 +182,134 @@ function createInterfaceCard(item) {
 
   summaryButton.addEventListener('click', () => {
     card.classList.toggle('open');
+  });
+
+  // 复制链接功能
+  copyLinkBtn.addEventListener('click', async (e) => {
+    e.stopPropagation();
+    const baseUrl = window.location.origin;
+    const fullUrl = `${baseUrl}${item.path}`;
+    
+    try {
+      await navigator.clipboard.writeText(fullUrl);
+      copyLinkBtn.innerHTML = '<span class="btn-icon">✅</span> 已复制';
+      setTimeout(() => {
+        copyLinkBtn.innerHTML = '<span class="btn-icon">📋</span> 复制链接';
+      }, 2000);
+    } catch (err) {
+      // 降级方案
+      const textArea = document.createElement('textarea');
+      textArea.value = fullUrl;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      copyLinkBtn.innerHTML = '<span class="btn-icon">✅</span> 已复制';
+      setTimeout(() => {
+        copyLinkBtn.innerHTML = '<span class="btn-icon">📋</span> 复制链接';
+      }, 2000);
+    }
+  });
+
+  // 测试接口功能
+  testApiBtn.addEventListener('click', async (e) => {
+    e.stopPropagation();
+    testResult.style.display = 'block';
+    testResult.className = 'test-result testing';
+    testResult.innerHTML = '<span class="loading">⏳</span> 正在测试接口...';
+    testApiBtn.disabled = true;
+
+    const startTime = Date.now();
+    
+    try {
+      const options = {
+        method: item.method,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      };
+
+      // 如果是 POST 请求且有请求体示例，则使用示例数据
+      if (item.method === 'POST' && item.requestBodyExample) {
+        options.body = JSON.stringify(item.requestBodyExample);
+      }
+
+      const response = await fetch(item.path, options);
+      const endTime = Date.now();
+      const duration = endTime - startTime;
+      
+      let responseData;
+      const contentType = response.headers.get('content-type');
+      if (contentType && contentType.includes('application/json')) {
+        responseData = await response.json();
+      } else {
+        responseData = await response.text();
+      }
+
+      if (response.ok) {
+        testResult.className = 'test-result success';
+        testResult.innerHTML = `
+          <div class="test-header">
+            <span class="status-icon">✅</span>
+            <span class="status-text">接口可用</span>
+            <span class="duration">${duration}ms</span>
+          </div>
+          <div class="test-detail">
+            <div class="detail-row">
+              <span class="label">状态码：</span>
+              <span class="value status-${response.status}">${response.status} ${response.statusText}</span>
+            </div>
+            <div class="detail-row">
+              <span class="label">响应数据：</span>
+              <pre class="response-preview">${typeof responseData === 'object' ? JSON.stringify(responseData, null, 2) : responseData}</pre>
+            </div>
+          </div>
+        `;
+      } else {
+        testResult.className = 'test-result warning';
+        testResult.innerHTML = `
+          <div class="test-header">
+            <span class="status-icon">⚠️</span>
+            <span class="status-text">接口返回错误</span>
+            <span class="duration">${duration}ms</span>
+          </div>
+          <div class="test-detail">
+            <div class="detail-row">
+              <span class="label">状态码：</span>
+              <span class="value status-${response.status}">${response.status} ${response.statusText}</span>
+            </div>
+            <div class="detail-row">
+              <span class="label">响应数据：</span>
+              <pre class="response-preview">${typeof responseData === 'object' ? JSON.stringify(responseData, null, 2) : responseData}</pre>
+            </div>
+          </div>
+        `;
+      }
+    } catch (error) {
+      const endTime = Date.now();
+      const duration = endTime - startTime;
+      
+      testResult.className = 'test-result error';
+      testResult.innerHTML = `
+        <div class="test-header">
+          <span class="status-icon">❌</span>
+          <span class="status-text">接口不可用</span>
+          <span class="duration">${duration}ms</span>
+        </div>
+        <div class="test-detail">
+          <div class="detail-row">
+            <span class="label">错误信息：</span>
+            <span class="value error-msg">${error.message}</span>
+          </div>
+          <div class="detail-row">
+            <span class="label">可能原因：</span>
+            <span class="value">网络错误、服务器未启动或接口不存在</span>
+          </div>
+        </div>
+      `;
+    }
+
+    testApiBtn.disabled = false;
   });
 
   return fragment;

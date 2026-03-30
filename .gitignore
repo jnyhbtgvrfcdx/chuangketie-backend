@@ -3,6 +3,9 @@ node_modules/
 *.log
 .env
 
+# 用户数据（持久化存储）
+src/data/users.json
+
 # Playwright
 /test-results/
 /playwright-report/

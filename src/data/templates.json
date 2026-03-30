@@ -1,0 +1,1768 @@
+[
+  {
+    "id": "tpl-online-001",
+    "name": "小红书美食分享封面",
+    "thumbnail": "https://picsum.photos/seed/food1/1080/1440",
+    "category": "社交媒体",
+    "width": 1080,
+    "height": 1440,
+    "description": "适合美食博主分享美食内容",
+    "tags": [
+      "美食",
+      "小红书",
+      "分享"
+    ],
+    "favoriteCount": 1280
+  },
+  {
+    "id": "tpl-online-002",
+    "name": "朋友圈早安日签",
+    "thumbnail": "https://picsum.photos/seed/morning/1080/1080",
+    "category": "社交媒体",
+    "width": 1080,
+    "height": 1080,
+    "description": "每日早安正能量分享",
+    "tags": [
+      "早安",
+      "日签",
+      "正能量"
+    ],
+    "favoriteCount": 856
+  },
+  {
+    "id": "tpl-online-003",
+    "name": "直播预告图文首图",
+    "thumbnail": "https://picsum.photos/seed/live/1080/608",
+    "category": "社交媒体",
+    "width": 1080,
+    "height": 608,
+    "description": "直播活动预告宣传图",
+    "tags": [
+      "直播",
+      "预告",
+      "宣传"
+    ],
+    "favoriteCount": 642
+  },
+  {
+    "id": "tpl-online-004",
+    "name": "穿搭种草封面",
+    "thumbnail": "https://picsum.photos/seed/fashion/1080/1440",
+    "category": "社交媒体",
+    "width": 1080,
+    "height": 1440,
+    "description": "时尚穿搭博主推荐封面",
+    "tags": [
+      "穿搭",
+      "时尚",
+      "种草"
+    ],
+    "favoriteCount": 1520
+  },
+  {
+    "id": "tpl-online-005",
+    "name": "春季沙龙活动海报",
+    "thumbnail": "https://picsum.photos/seed/spring/1080/1528",
+    "category": "海报",
+    "width": 1080,
+    "height": 1528,
+    "description": "适合春季主题活动宣传",
+    "tags": [
+      "春季",
+      "沙龙",
+      "活动"
+    ],
+    "favoriteCount": 723
+  },
+  {
+    "id": "tpl-online-006",
+    "name": "展会邀请函长图",
+    "thumbnail": "https://picsum.photos/seed/invite/1080/1920",
+    "category": "海报",
+    "width": 1080,
+    "height": 1920,
+    "description": "展会活动邀请函",
+    "tags": [
+      "展会",
+      "邀请函",
+      "长图"
+    ],
+    "favoriteCount": 534
+  },
+  {
+    "id": "tpl-online-007",
+    "name": "开业庆典宣传海报",
+    "thumbnail": "https://picsum.photos/seed/ce/1080/1528",
+    "category": "海报",
+    "width": 1080,
+    "height": 1528,
+    "description": "店铺开业庆典宣传",
+    "tags": [
+      "开业",
+      "庆典",
+      "宣传"
+    ],
+    "favoriteCount": 892
+  },
+  {
+    "id": "tpl-online-008",
+    "name": "音乐派对报名海报",
+    "thumbnail": "https://picsum.photos/seed/music/1080/1528",
+    "category": "海报",
+    "width": 1080,
+    "height": 1528,
+    "description": "音乐活动派对宣传",
+    "tags": [
+      "音乐",
+      "派对",
+      "活动"
+    ],
+    "favoriteCount": 467
+  },
+  {
+    "id": "tpl-online-009",
+    "name": "直播间爆款预告",
+    "thumbnail": "https://picsum.photos/seed/hot/1080/1440",
+    "category": "电商",
+    "width": 1080,
+    "height": 1440,
+    "description": "直播带货爆款预告",
+    "tags": [
+      "直播",
+      "爆款",
+      "带货"
+    ],
+    "favoriteCount": 2341
+  },
+  {
+    "id": "tpl-online-010",
+    "name": "新品上新促销海报",
+    "thumbnail": "https://picsum.photos/seed/new/1080/1528",
+    "category": "电商",
+    "width": 1080,
+    "height": 1528,
+    "description": "新品上市促销宣传",
+    "tags": [
+      "新品",
+      "促销",
+      "电商"
+    ],
+    "favoriteCount": 1876
+  },
+  {
+    "id": "tpl-online-011",
+    "name": "简约风格求职简历",
+    "thumbnail": "https://picsum.photos/seed/resume1/800/1131",
+    "category": "简历",
+    "width": 800,
+    "height": 1131,
+    "description": "简约专业求职简历模板",
+    "tags": [
+      "简历",
+      "求职",
+      "简约"
+    ],
+    "favoriteCount": 4521
+  },
+  {
+    "id": "tpl-online-012",
+    "name": "创意设计师简历",
+    "thumbnail": "https://picsum.photos/seed/resume2/800/1131",
+    "category": "简历",
+    "width": 800,
+    "height": 1131,
+    "description": "创意设计师专属简历",
+    "tags": [
+      "简历",
+      "设计师",
+      "创意"
+    ],
+    "favoriteCount": 2134
+  },
+  {
+    "id": "tpl-online-013",
+    "name": "商务汇报PPT模板",
+    "thumbnail": "https://picsum.photos/seed/ppt1/1920/1080",
+    "category": "PPT",
+    "width": 1920,
+    "height": 1080,
+    "description": "专业商务汇报演示模板",
+    "tags": [
+      "PPT",
+      "商务",
+      "汇报"
+    ],
+    "favoriteCount": 5678
+  },
+  {
+    "id": "tpl-online-014",
+    "name": "年终总结PPT模板",
+    "thumbnail": "https://picsum.photos/seed/ppt2/1920/1080",
+    "category": "PPT",
+    "width": 1920,
+    "height": 1080,
+    "description": "年度工作总结汇报",
+    "tags": [
+      "PPT",
+      "年终",
+      "总结"
+    ],
+    "favoriteCount": 6789
+  },
+  {
+    "id": "tpl-online-015",
+    "name": "科技品牌Logo",
+    "thumbnail": "https://picsum.photos/seed/logo1/500/500",
+    "category": "Logo",
+    "width": 500,
+    "height": 500,
+    "description": "科技公司品牌标志",
+    "tags": [
+      "Logo",
+      "科技",
+      "品牌"
+    ],
+    "favoriteCount": 1234
+  },
+  {
+    "id": "tpl-online-016",
+    "name": "抖音视频封面",
+    "thumbnail": "https://picsum.photos/seed/video1/1080/1920",
+    "category": "短视频",
+    "width": 1080,
+    "height": 1920,
+    "description": "抖音短视频封面模板",
+    "tags": [
+      "短视频",
+      "抖音",
+      "封面"
+    ],
+    "favoriteCount": 5678
+  },
+  {
+    "id": "tpl-online-017",
+    "name": "视频号封面",
+    "thumbnail": "https://picsum.photos/seed/video2/1080/1260",
+    "category": "短视频",
+    "width": 1080,
+    "height": 1260,
+    "description": "微信视频号封面模板",
+    "tags": [
+      "短视频",
+      "视频号",
+      "封面"
+    ],
+    "favoriteCount": 3456
+  },
+  {
+    "id": "tpl-online-018",
+    "name": "公众号封面首图",
+    "thumbnail": "https://picsum.photos/seed/article/900/383",
+    "category": "社交媒体",
+    "width": 900,
+    "height": 383,
+    "description": "微信公众号文章封面",
+    "tags": [
+      "公众号",
+      "封面",
+      "文章"
+    ],
+    "favoriteCount": 4567
+  },
+  {
+    "id": "tpl-local-001",
+    "name": "小红书爆款封面",
+    "thumbnail": "/templates/chuangkit_template_00005.webp",
+    "category": "社交媒体",
+    "width": 1080,
+    "height": 1440,
+    "description": "专业社交媒体设计，精选优质模版助力您的创作",
+    "tags": [
+      "社交媒体",
+      "朋友圈",
+      "小红书",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 4141
+  },
+  {
+    "id": "tpl-local-002",
+    "name": "企业周年庆典",
+    "thumbnail": "/templates/chuangkit_template_00006.png",
+    "category": "海报",
+    "width": 1080,
+    "height": 1920,
+    "description": "专业海报设计，精选优质模版助力您的创作",
+    "tags": [
+      "海报",
+      "宣传",
+      "活动",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 2052
+  },
+  {
+    "id": "tpl-local-003",
+    "name": "双十一狂欢节",
+    "thumbnail": "/templates/chuangkit_template_00007.webp",
+    "category": "电商",
+    "width": 1080,
+    "height": 1528,
+    "description": "专业电商设计，精选优质模版助力您的创作",
+    "tags": [
+      "电商",
+      "促销",
+      "商品",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 5460
+  },
+  {
+    "id": "tpl-local-004",
+    "name": "简约专业简历",
+    "thumbnail": "/templates/chuangkit_template_00009.webp",
+    "category": "简历",
+    "width": 1080,
+    "height": 1080,
+    "description": "专业简历设计，精选优质模版助力您的创作",
+    "tags": [
+      "简历",
+      "求职",
+      "面试",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 2656
+  },
+  {
+    "id": "tpl-local-005",
+    "name": "商务汇报演示",
+    "thumbnail": "/templates/chuangkit_template_00014.webp",
+    "category": "PPT",
+    "width": 800,
+    "height": 1131,
+    "description": "专业PPT设计，精选优质模版助力您的创作",
+    "tags": [
+      "PPT",
+      "演示",
+      "汇报",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 698
+  },
+  {
+    "id": "tpl-local-006",
+    "name": "简约商务名片",
+    "thumbnail": "/templates/chuangkit_template_00015.webp",
+    "category": "名片",
+    "width": 1920,
+    "height": 1080,
+    "description": "专业名片设计，精选优质模版助力您的创作",
+    "tags": [
+      "名片",
+      "商务",
+      "个人",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 4334
+  },
+  {
+    "id": "tpl-local-007",
+    "name": "婚礼邀请函",
+    "thumbnail": "/templates/chuangkit_template_00017.webp",
+    "category": "邀请函",
+    "width": 500,
+    "height": 500,
+    "description": "专业邀请函设计，精选优质模版助力您的创作",
+    "tags": [
+      "邀请函",
+      "婚礼",
+      "活动",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 1097
+  },
+  {
+    "id": "tpl-local-008",
+    "name": "科技品牌Logo",
+    "thumbnail": "/templates/chuangkit_template_00019.webp",
+    "category": "Logo",
+    "width": 900,
+    "height": 383,
+    "description": "专业Logo设计，精选优质模版助力您的创作",
+    "tags": [
+      "Logo",
+      "品牌",
+      "标志",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 2969
+  },
+  {
+    "id": "tpl-local-009",
+    "name": "促销活动传单",
+    "thumbnail": "/templates/chuangkit_template_00021.webp",
+    "category": "传单",
+    "width": 1080,
+    "height": 1440,
+    "description": "专业传单设计，精选优质模版助力您的创作",
+    "tags": [
+      "传单",
+      "宣传",
+      "促销",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 3759
+  },
+  {
+    "id": "tpl-local-010",
+    "name": "抖音热门封面",
+    "thumbnail": "/templates/chuangkit_template_00022.png",
+    "category": "短视频",
+    "width": 1080,
+    "height": 1920,
+    "description": "专业短视频设计，精选优质模版助力您的创作",
+    "tags": [
+      "短视频",
+      "抖音",
+      "封面",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 1778
+  },
+  {
+    "id": "tpl-local-011",
+    "name": "朋友圈精致日签",
+    "thumbnail": "/templates/chuangkit_template_00023.webp",
+    "category": "社交媒体",
+    "width": 1080,
+    "height": 1528,
+    "description": "专业社交媒体设计，精选优质模版助力您的创作",
+    "tags": [
+      "社交媒体",
+      "朋友圈",
+      "小红书",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 5307
+  },
+  {
+    "id": "tpl-local-012",
+    "name": "新品发布盛典",
+    "thumbnail": "/templates/chuangkit_template_00024.webp",
+    "category": "海报",
+    "width": 1080,
+    "height": 1080,
+    "description": "专业海报设计，精选优质模版助力您的创作",
+    "tags": [
+      "海报",
+      "宣传",
+      "活动",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 1575
+  },
+  {
+    "id": "tpl-local-013",
+    "name": "618年中大促",
+    "thumbnail": "/templates/chuangkit_template_00025.webp",
+    "category": "电商",
+    "width": 800,
+    "height": 1131,
+    "description": "专业电商设计，精选优质模版助力您的创作",
+    "tags": [
+      "电商",
+      "促销",
+      "商品",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 5125
+  },
+  {
+    "id": "tpl-local-014",
+    "name": "创意设计简历",
+    "thumbnail": "/templates/chuangkit_template_00026.webp",
+    "category": "简历",
+    "width": 1920,
+    "height": 1080,
+    "description": "专业简历设计，精选优质模版助力您的创作",
+    "tags": [
+      "简历",
+      "求职",
+      "面试",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 5108
+  },
+  {
+    "id": "tpl-local-015",
+    "name": "项目提案演示",
+    "thumbnail": "/templates/chuangkit_template_00027.webp",
+    "category": "PPT",
+    "width": 500,
+    "height": 500,
+    "description": "专业PPT设计，精选优质模版助力您的创作",
+    "tags": [
+      "PPT",
+      "演示",
+      "汇报",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 4155
+  },
+  {
+    "id": "tpl-local-016",
+    "name": "创意个人名片",
+    "thumbnail": "/templates/chuangkit_template_00028.webp",
+    "category": "名片",
+    "width": 900,
+    "height": 383,
+    "description": "专业名片设计，精选优质模版助力您的创作",
+    "tags": [
+      "名片",
+      "商务",
+      "个人",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 4663
+  },
+  {
+    "id": "tpl-local-017",
+    "name": "生日派对邀请",
+    "thumbnail": "/templates/chuangkit_template_00029.webp",
+    "category": "邀请函",
+    "width": 1080,
+    "height": 1440,
+    "description": "专业邀请函设计，精选优质模版助力您的创作",
+    "tags": [
+      "邀请函",
+      "婚礼",
+      "活动",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 1136
+  },
+  {
+    "id": "tpl-local-018",
+    "name": "互联网Logo",
+    "thumbnail": "/templates/chuangkit_template_00030.webp",
+    "category": "Logo",
+    "width": 1080,
+    "height": 1920,
+    "description": "专业Logo设计，精选优质模版助力您的创作",
+    "tags": [
+      "Logo",
+      "品牌",
+      "标志",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 3230
+  },
+  {
+    "id": "tpl-local-019",
+    "name": "新品推广传单",
+    "thumbnail": "/templates/chuangkit_template_00031.png",
+    "category": "传单",
+    "width": 1080,
+    "height": 1528,
+    "description": "专业传单设计，精选优质模版助力您的创作",
+    "tags": [
+      "传单",
+      "宣传",
+      "促销",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 1711
+  },
+  {
+    "id": "tpl-local-020",
+    "name": "视频号封面",
+    "thumbnail": "/templates/chuangkit_template_00032.png",
+    "category": "短视频",
+    "width": 1080,
+    "height": 1080,
+    "description": "专业短视频设计，精选优质模版助力您的创作",
+    "tags": [
+      "短视频",
+      "抖音",
+      "封面",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 4865
+  },
+  {
+    "id": "tpl-local-021",
+    "name": "公众号首图精选",
+    "thumbnail": "/templates/chuangkit_template_00033.png",
+    "category": "社交媒体",
+    "width": 800,
+    "height": 1131,
+    "description": "专业社交媒体设计，精选优质模版助力您的创作",
+    "tags": [
+      "社交媒体",
+      "朋友圈",
+      "小红书",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 3411
+  },
+  {
+    "id": "tpl-local-022",
+    "name": "品牌形象展示",
+    "thumbnail": "/templates/chuangkit_template_00034.jpg",
+    "category": "海报",
+    "width": 1920,
+    "height": 1080,
+    "description": "专业海报设计，精选优质模版助力您的创作",
+    "tags": [
+      "海报",
+      "宣传",
+      "活动",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 1568
+  },
+  {
+    "id": "tpl-local-023",
+    "name": "年货节特惠",
+    "thumbnail": "/templates/chuangkit_template_00035.webp",
+    "category": "电商",
+    "width": 500,
+    "height": 500,
+    "description": "专业电商设计，精选优质模版助力您的创作",
+    "tags": [
+      "电商",
+      "促销",
+      "商品",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 1604
+  },
+  {
+    "id": "tpl-local-024",
+    "name": "商务精英简历",
+    "thumbnail": "/templates/chuangkit_template_00036.webp",
+    "category": "简历",
+    "width": 900,
+    "height": 383,
+    "description": "专业简历设计，精选优质模版助力您的创作",
+    "tags": [
+      "简历",
+      "求职",
+      "面试",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 1385
+  },
+  {
+    "id": "tpl-local-025",
+    "name": "年度工作总结",
+    "thumbnail": "/templates/chuangkit_template_00037.webp",
+    "category": "PPT",
+    "width": 1080,
+    "height": 1440,
+    "description": "专业PPT设计，精选优质模版助力您的创作",
+    "tags": [
+      "PPT",
+      "演示",
+      "汇报",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 1739
+  },
+  {
+    "id": "tpl-local-026",
+    "name": "企业高管名片",
+    "thumbnail": "/templates/chuangkit_template_00038.webp",
+    "category": "名片",
+    "width": 1080,
+    "height": 1920,
+    "description": "专业名片设计，精选优质模版助力您的创作",
+    "tags": [
+      "名片",
+      "商务",
+      "个人",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 1825
+  },
+  {
+    "id": "tpl-local-027",
+    "name": "企业年会邀请",
+    "thumbnail": "/templates/chuangkit_template_00039.jpg",
+    "category": "邀请函",
+    "width": 1080,
+    "height": 1528,
+    "description": "专业邀请函设计，精选优质模版助力您的创作",
+    "tags": [
+      "邀请函",
+      "婚礼",
+      "活动",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 3316
+  },
+  {
+    "id": "tpl-local-028",
+    "name": "金融品牌Logo",
+    "thumbnail": "/templates/chuangkit_template_00040.jpg",
+    "category": "Logo",
+    "width": 1080,
+    "height": 1080,
+    "description": "专业Logo设计，精选优质模版助力您的创作",
+    "tags": [
+      "Logo",
+      "品牌",
+      "标志",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 2530
+  },
+  {
+    "id": "tpl-local-029",
+    "name": "店铺开业传单",
+    "thumbnail": "/templates/chuangkit_template_00041.jpg",
+    "category": "传单",
+    "width": 800,
+    "height": 1131,
+    "description": "专业传单设计，精选优质模版助力您的创作",
+    "tags": [
+      "传单",
+      "宣传",
+      "促销",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 1766
+  },
+  {
+    "id": "tpl-local-030",
+    "name": "快手爆款封面",
+    "thumbnail": "/templates/chuangkit_template_00042.png",
+    "category": "短视频",
+    "width": 1920,
+    "height": 1080,
+    "description": "专业短视频设计，精选优质模版助力您的创作",
+    "tags": [
+      "短视频",
+      "抖音",
+      "封面",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 2150
+  },
+  {
+    "id": "tpl-local-031",
+    "name": "抖音吸睛封面",
+    "thumbnail": "/templates/chuangkit_template_00043.png",
+    "category": "社交媒体",
+    "width": 500,
+    "height": 500,
+    "description": "专业社交媒体设计，精选优质模版助力您的创作",
+    "tags": [
+      "社交媒体",
+      "朋友圈",
+      "小红书",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 3289
+  },
+  {
+    "id": "tpl-local-032",
+    "name": "活动宣传推广",
+    "thumbnail": "/templates/chuangkit_template_00044.webp",
+    "category": "海报",
+    "width": 900,
+    "height": 383,
+    "description": "专业海报设计，精选优质模版助力您的创作",
+    "tags": [
+      "海报",
+      "宣传",
+      "活动",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 5078
+  },
+  {
+    "id": "tpl-local-033",
+    "name": "新品首发专区",
+    "thumbnail": "/templates/chuangkit_template_00045.webp",
+    "category": "电商",
+    "width": 1080,
+    "height": 1440,
+    "description": "专业电商设计，精选优质模版助力您的创作",
+    "tags": [
+      "电商",
+      "促销",
+      "商品",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 2032
+  },
+  {
+    "id": "tpl-local-034",
+    "name": "技术大牛简历",
+    "thumbnail": "/templates/chuangkit_template_00046.webp",
+    "category": "简历",
+    "width": 1080,
+    "height": 1920,
+    "description": "专业简历设计，精选优质模版助力您的创作",
+    "tags": [
+      "简历",
+      "求职",
+      "面试",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 3581
+  },
+  {
+    "id": "tpl-local-035",
+    "name": "季度业绩汇报",
+    "thumbnail": "/templates/chuangkit_template_00047.webp",
+    "category": "PPT",
+    "width": 1080,
+    "height": 1528,
+    "description": "专业PPT设计，精选优质模版助力您的创作",
+    "tags": [
+      "PPT",
+      "演示",
+      "汇报",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 3879
+  },
+  {
+    "id": "tpl-local-036",
+    "name": "设计师名片",
+    "thumbnail": "/templates/chuangkit_template_00048.webp",
+    "category": "名片",
+    "width": 1080,
+    "height": 1080,
+    "description": "专业名片设计，精选优质模版助力您的创作",
+    "tags": [
+      "名片",
+      "商务",
+      "个人",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 2922
+  },
+  {
+    "id": "tpl-local-037",
+    "name": "新品发布会邀请",
+    "thumbnail": "/templates/chuangkit_template_00049.webp",
+    "category": "邀请函",
+    "width": 800,
+    "height": 1131,
+    "description": "专业邀请函设计，精选优质模版助力您的创作",
+    "tags": [
+      "邀请函",
+      "婚礼",
+      "活动",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 2884
+  },
+  {
+    "id": "tpl-local-038",
+    "name": "教育机构Logo",
+    "thumbnail": "/templates/chuangkit_template_00050.webp",
+    "category": "Logo",
+    "width": 1920,
+    "height": 1080,
+    "description": "专业Logo设计，精选优质模版助力您的创作",
+    "tags": [
+      "Logo",
+      "品牌",
+      "标志",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 1195
+  },
+  {
+    "id": "tpl-local-039",
+    "name": "节日促销传单",
+    "thumbnail": "/templates/chuangkit_template_00051.webp",
+    "category": "传单",
+    "width": 500,
+    "height": 500,
+    "description": "专业传单设计，精选优质模版助力您的创作",
+    "tags": [
+      "传单",
+      "宣传",
+      "促销",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 2546
+  },
+  {
+    "id": "tpl-local-040",
+    "name": "B站视频封面",
+    "thumbnail": "/templates/chuangkit_template_00052.webp",
+    "category": "短视频",
+    "width": 900,
+    "height": 383,
+    "description": "专业短视频设计，精选优质模版助力您的创作",
+    "tags": [
+      "短视频",
+      "抖音",
+      "封面",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 4454
+  },
+  {
+    "id": "tpl-local-041",
+    "name": "微博热搜配图",
+    "thumbnail": "/templates/chuangkit_template_00053.webp",
+    "category": "社交媒体",
+    "width": 1080,
+    "height": 1440,
+    "description": "专业社交媒体设计，精选优质模版助力您的创作",
+    "tags": [
+      "社交媒体",
+      "朋友圈",
+      "小红书",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 1147
+  },
+  {
+    "id": "tpl-local-042",
+    "name": "节日主题海报",
+    "thumbnail": "/templates/chuangkit_template_00054.webp",
+    "category": "海报",
+    "width": 1080,
+    "height": 1920,
+    "description": "专业海报设计，精选优质模版助力您的创作",
+    "tags": [
+      "海报",
+      "宣传",
+      "活动",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 2361
+  },
+  {
+    "id": "tpl-local-043",
+    "name": "限时秒杀专区",
+    "thumbnail": "/templates/chuangkit_template_00055.webp",
+    "category": "电商",
+    "width": 1080,
+    "height": 1528,
+    "description": "专业电商设计，精选优质模版助力您的创作",
+    "tags": [
+      "电商",
+      "促销",
+      "商品",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 2782
+  },
+  {
+    "id": "tpl-local-044",
+    "name": "产品经理简历",
+    "thumbnail": "/templates/chuangkit_template_00056.webp",
+    "category": "简历",
+    "width": 1080,
+    "height": 1080,
+    "description": "专业简历设计，精选优质模版助力您的创作",
+    "tags": [
+      "简历",
+      "求职",
+      "面试",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 4441
+  },
+  {
+    "id": "tpl-local-045",
+    "name": "产品发布会PPT",
+    "thumbnail": "/templates/chuangkit_template_00057.webp",
+    "category": "PPT",
+    "width": 800,
+    "height": 1131,
+    "description": "专业PPT设计，精选优质模版助力您的创作",
+    "tags": [
+      "PPT",
+      "演示",
+      "汇报",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 2612
+  },
+  {
+    "id": "tpl-local-046",
+    "name": "律师名片设计",
+    "thumbnail": "/templates/chuangkit_template_00058.webp",
+    "category": "名片",
+    "width": 1920,
+    "height": 1080,
+    "description": "专业名片设计，精选优质模版助力您的创作",
+    "tags": [
+      "名片",
+      "商务",
+      "个人",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 3594
+  },
+  {
+    "id": "tpl-local-047",
+    "name": "展览开幕邀请",
+    "thumbnail": "/templates/chuangkit_template_00059.webp",
+    "category": "邀请函",
+    "width": 500,
+    "height": 500,
+    "description": "专业邀请函设计，精选优质模版助力您的创作",
+    "tags": [
+      "邀请函",
+      "婚礼",
+      "活动",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 5091
+  },
+  {
+    "id": "tpl-local-048",
+    "name": "医疗健康Logo",
+    "thumbnail": "/templates/chuangkit_template_00060.webp",
+    "category": "Logo",
+    "width": 900,
+    "height": 383,
+    "description": "专业Logo设计，精选优质模版助力您的创作",
+    "tags": [
+      "Logo",
+      "品牌",
+      "标志",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 3152
+  },
+  {
+    "id": "tpl-local-049",
+    "name": "产品介绍传单",
+    "thumbnail": "/templates/chuangkit_template_00061.webp",
+    "category": "传单",
+    "width": 1080,
+    "height": 1440,
+    "description": "专业传单设计，精选优质模版助力您的创作",
+    "tags": [
+      "传单",
+      "宣传",
+      "促销",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 1378
+  },
+  {
+    "id": "tpl-local-050",
+    "name": "小红书视频封面",
+    "thumbnail": "/templates/chuangkit_template_00062.webp",
+    "category": "短视频",
+    "width": 1080,
+    "height": 1920,
+    "description": "专业短视频设计，精选优质模版助力您的创作",
+    "tags": [
+      "短视频",
+      "抖音",
+      "封面",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 3799
+  },
+  {
+    "id": "tpl-local-051",
+    "name": "小红书种草笔记",
+    "thumbnail": "/templates/chuangkit_template_00063.webp",
+    "category": "社交媒体",
+    "width": 1080,
+    "height": 1528,
+    "description": "专业社交媒体设计，精选优质模版助力您的创作",
+    "tags": [
+      "社交媒体",
+      "朋友圈",
+      "小红书",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 4167
+  },
+  {
+    "id": "tpl-local-052",
+    "name": "促销活动海报",
+    "thumbnail": "/templates/chuangkit_template_00064.webp",
+    "category": "海报",
+    "width": 1080,
+    "height": 1080,
+    "description": "专业海报设计，精选优质模版助力您的创作",
+    "tags": [
+      "海报",
+      "宣传",
+      "活动",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 2117
+  },
+  {
+    "id": "tpl-local-053",
+    "name": "满减优惠专区",
+    "thumbnail": "/templates/chuangkit_template_00065.webp",
+    "category": "电商",
+    "width": 800,
+    "height": 1131,
+    "description": "专业电商设计，精选优质模版助力您的创作",
+    "tags": [
+      "电商",
+      "促销",
+      "商品",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 5422
+  },
+  {
+    "id": "tpl-local-054",
+    "name": "市场营销简历",
+    "thumbnail": "/templates/chuangkit_template_00066.webp",
+    "category": "简历",
+    "width": 1920,
+    "height": 1080,
+    "description": "专业简历设计，精选优质模版助力您的创作",
+    "tags": [
+      "简历",
+      "求职",
+      "面试",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 5345
+  },
+  {
+    "id": "tpl-local-055",
+    "name": "培训课件设计",
+    "thumbnail": "/templates/chuangkit_template_00067.webp",
+    "category": "PPT",
+    "width": 500,
+    "height": 500,
+    "description": "专业PPT设计，精选优质模版助力您的创作",
+    "tags": [
+      "PPT",
+      "演示",
+      "汇报",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 4671
+  },
+  {
+    "id": "tpl-local-056",
+    "name": "医生名片设计",
+    "thumbnail": "/templates/chuangkit_template_00068.webp",
+    "category": "名片",
+    "width": 900,
+    "height": 383,
+    "description": "专业名片设计，精选优质模版助力您的创作",
+    "tags": [
+      "名片",
+      "商务",
+      "个人",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 1719
+  },
+  {
+    "id": "tpl-local-057",
+    "name": "音乐节邀请函",
+    "thumbnail": "/templates/chuangkit_template_00069.webp",
+    "category": "邀请函",
+    "width": 1080,
+    "height": 1440,
+    "description": "专业邀请函设计，精选优质模版助力您的创作",
+    "tags": [
+      "邀请函",
+      "婚礼",
+      "活动",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 2875
+  },
+  {
+    "id": "tpl-local-058",
+    "name": "餐饮美食Logo",
+    "thumbnail": "/templates/chuangkit_template_00070.webp",
+    "category": "Logo",
+    "width": 1080,
+    "height": 1920,
+    "description": "专业Logo设计，精选优质模版助力您的创作",
+    "tags": [
+      "Logo",
+      "品牌",
+      "标志",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 3966
+  },
+  {
+    "id": "tpl-local-059",
+    "name": "服务宣传传单",
+    "thumbnail": "/templates/chuangkit_template_00071.webp",
+    "category": "传单",
+    "width": 1080,
+    "height": 1528,
+    "description": "专业传单设计，精选优质模版助力您的创作",
+    "tags": [
+      "传单",
+      "宣传",
+      "促销",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 1989
+  },
+  {
+    "id": "tpl-local-060",
+    "name": "知识分享封面",
+    "thumbnail": "/templates/chuangkit_template_00072.webp",
+    "category": "短视频",
+    "width": 1080,
+    "height": 1080,
+    "description": "专业短视频设计，精选优质模版助力您的创作",
+    "tags": [
+      "短视频",
+      "抖音",
+      "封面",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 3153
+  },
+  {
+    "id": "tpl-local-061",
+    "name": "朋友圈早安问候",
+    "thumbnail": "/templates/chuangkit_template_00073.webp",
+    "category": "社交媒体",
+    "width": 800,
+    "height": 1131,
+    "description": "专业社交媒体设计，精选优质模版助力您的创作",
+    "tags": [
+      "社交媒体",
+      "朋友圈",
+      "小红书",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 1312
+  },
+  {
+    "id": "tpl-local-062",
+    "name": "品牌故事海报",
+    "thumbnail": "/templates/chuangkit_template_00074.webp",
+    "category": "海报",
+    "width": 1920,
+    "height": 1080,
+    "description": "专业海报设计，精选优质模版助力您的创作",
+    "tags": [
+      "海报",
+      "宣传",
+      "活动",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 4590
+  },
+  {
+    "id": "tpl-local-063",
+    "name": "会员专享福利",
+    "thumbnail": "/templates/chuangkit_template_00075.webp",
+    "category": "电商",
+    "width": 500,
+    "height": 500,
+    "description": "专业电商设计，精选优质模版助力您的创作",
+    "tags": [
+      "电商",
+      "促销",
+      "商品",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 5423
+  },
+  {
+    "id": "tpl-local-064",
+    "name": "运营专员简历",
+    "thumbnail": "/templates/chuangkit_template_00076.webp",
+    "category": "简历",
+    "width": 900,
+    "height": 383,
+    "description": "专业简历设计，精选优质模版助力您的创作",
+    "tags": [
+      "简历",
+      "求职",
+      "面试",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 695
+  },
+  {
+    "id": "tpl-local-065",
+    "name": "学术演讲PPT",
+    "thumbnail": "/templates/chuangkit_template_00077.webp",
+    "category": "PPT",
+    "width": 1080,
+    "height": 1440,
+    "description": "专业PPT设计，精选优质模版助力您的创作",
+    "tags": [
+      "PPT",
+      "演示",
+      "汇报",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 1002
+  },
+  {
+    "id": "tpl-local-066",
+    "name": "教师名片设计",
+    "thumbnail": "/templates/chuangkit_template_00078.webp",
+    "category": "名片",
+    "width": 1080,
+    "height": 1920,
+    "description": "专业名片设计，精选优质模版助力您的创作",
+    "tags": [
+      "名片",
+      "商务",
+      "个人",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 2190
+  },
+  {
+    "id": "tpl-local-067",
+    "name": "艺术展邀请函",
+    "thumbnail": "/templates/chuangkit_template_00079.webp",
+    "category": "邀请函",
+    "width": 1080,
+    "height": 1528,
+    "description": "专业邀请函设计，精选优质模版助力您的创作",
+    "tags": [
+      "邀请函",
+      "婚礼",
+      "活动",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 3565
+  },
+  {
+    "id": "tpl-local-068",
+    "name": "零售品牌Logo",
+    "thumbnail": "/templates/chuangkit_template_00080.webp",
+    "category": "Logo",
+    "width": 1080,
+    "height": 1080,
+    "description": "专业Logo设计，精选优质模版助力您的创作",
+    "tags": [
+      "Logo",
+      "品牌",
+      "标志",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 2802
+  },
+  {
+    "id": "tpl-local-069",
+    "name": "招商加盟传单",
+    "thumbnail": "/templates/chuangkit_template_00081.webp",
+    "category": "传单",
+    "width": 800,
+    "height": 1131,
+    "description": "专业传单设计，精选优质模版助力您的创作",
+    "tags": [
+      "传单",
+      "宣传",
+      "促销",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 5392
+  },
+  {
+    "id": "tpl-local-070",
+    "name": "搞笑段子封面",
+    "thumbnail": "/templates/chuangkit_template_00082.webp",
+    "category": "短视频",
+    "width": 1920,
+    "height": 1080,
+    "description": "专业短视频设计，精选优质模版助力您的创作",
+    "tags": [
+      "短视频",
+      "抖音",
+      "封面",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 3180
+  },
+  {
+    "id": "tpl-local-071",
+    "name": "短视频封面大师",
+    "thumbnail": "/templates/chuangkit_template_00083.webp",
+    "category": "社交媒体",
+    "width": 500,
+    "height": 500,
+    "description": "专业社交媒体设计，精选优质模版助力您的创作",
+    "tags": [
+      "社交媒体",
+      "朋友圈",
+      "小红书",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 5376
+  },
+  {
+    "id": "tpl-local-072",
+    "name": "产品介绍海报",
+    "thumbnail": "/templates/chuangkit_template_00084.webp",
+    "category": "海报",
+    "width": 900,
+    "height": 383,
+    "description": "专业海报设计，精选优质模版助力您的创作",
+    "tags": [
+      "海报",
+      "宣传",
+      "活动",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 952
+  },
+  {
+    "id": "tpl-local-073",
+    "name": "店铺周年庆",
+    "thumbnail": "/templates/chuangkit_template_00085.webp",
+    "category": "电商",
+    "width": 1080,
+    "height": 1440,
+    "description": "专业电商设计，精选优质模版助力您的创作",
+    "tags": [
+      "电商",
+      "促销",
+      "商品",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 3348
+  },
+  {
+    "id": "tpl-local-074",
+    "name": "行政人事简历",
+    "thumbnail": "/templates/chuangkit_template_00086.webp",
+    "category": "简历",
+    "width": 1080,
+    "height": 1920,
+    "description": "专业简历设计，精选优质模版助力您的创作",
+    "tags": [
+      "简历",
+      "求职",
+      "面试",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 3928
+  },
+  {
+    "id": "tpl-local-075",
+    "name": "创业路演PPT",
+    "thumbnail": "/templates/chuangkit_template_00087.webp",
+    "category": "PPT",
+    "width": 1080,
+    "height": 1528,
+    "description": "专业PPT设计，精选优质模版助力您的创作",
+    "tags": [
+      "PPT",
+      "演示",
+      "汇报",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 1940
+  },
+  {
+    "id": "tpl-local-076",
+    "name": "销售精英名片",
+    "thumbnail": "/templates/chuangkit_template_00088.webp",
+    "category": "名片",
+    "width": 1080,
+    "height": 1080,
+    "description": "专业名片设计，精选优质模版助力您的创作",
+    "tags": [
+      "名片",
+      "商务",
+      "个人",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 1630
+  },
+  {
+    "id": "tpl-local-077",
+    "name": "时尚秀邀请函",
+    "thumbnail": "/templates/chuangkit_template_00089.webp",
+    "category": "邀请函",
+    "width": 800,
+    "height": 1131,
+    "description": "专业邀请函设计，精选优质模版助力您的创作",
+    "tags": [
+      "邀请函",
+      "婚礼",
+      "活动",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 693
+  },
+  {
+    "id": "tpl-local-078",
+    "name": "时尚品牌Logo",
+    "thumbnail": "/templates/chuangkit_template_00090.webp",
+    "category": "Logo",
+    "width": 1920,
+    "height": 1080,
+    "description": "专业Logo设计，精选优质模版助力您的创作",
+    "tags": [
+      "Logo",
+      "品牌",
+      "标志",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 2711
+  },
+  {
+    "id": "tpl-local-079",
+    "name": "招聘宣传传单",
+    "thumbnail": "/templates/chuangkit_template_00091.webp",
+    "category": "传单",
+    "width": 500,
+    "height": 500,
+    "description": "专业传单设计，精选优质模版助力您的创作",
+    "tags": [
+      "传单",
+      "宣传",
+      "促销",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 1295
+  },
+  {
+    "id": "tpl-local-080",
+    "name": "美食探店封面",
+    "thumbnail": "/templates/chuangkit_template_00092.webp",
+    "category": "短视频",
+    "width": 900,
+    "height": 383,
+    "description": "专业短视频设计，精选优质模版助力您的创作",
+    "tags": [
+      "短视频",
+      "抖音",
+      "封面",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 4060
+  },
+  {
+    "id": "tpl-local-081",
+    "name": "社媒运营神器",
+    "thumbnail": "/templates/chuangkit_template_00093.webp",
+    "category": "社交媒体",
+    "width": 1080,
+    "height": 1440,
+    "description": "专业社交媒体设计，精选优质模版助力您的创作",
+    "tags": [
+      "社交媒体",
+      "朋友圈",
+      "小红书",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 4040
+  },
+  {
+    "id": "tpl-local-082",
+    "name": "企业文化展示",
+    "thumbnail": "/templates/chuangkit_template_00094.webp",
+    "category": "海报",
+    "width": 1080,
+    "height": 1920,
+    "description": "专业海报设计，精选优质模版助力您的创作",
+    "tags": [
+      "海报",
+      "宣传",
+      "活动",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 2384
+  },
+  {
+    "id": "tpl-local-083",
+    "name": "品牌日特卖",
+    "thumbnail": "/templates/chuangkit_template_00095.webp",
+    "category": "电商",
+    "width": 1080,
+    "height": 1528,
+    "description": "专业电商设计，精选优质模版助力您的创作",
+    "tags": [
+      "电商",
+      "促销",
+      "商品",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 4573
+  },
+  {
+    "id": "tpl-local-084",
+    "name": "财务会计简历",
+    "thumbnail": "/templates/chuangkit_template_00096.webp",
+    "category": "简历",
+    "width": 1080,
+    "height": 1080,
+    "description": "专业简历设计，精选优质模版助力您的创作",
+    "tags": [
+      "简历",
+      "求职",
+      "面试",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 2203
+  },
+  {
+    "id": "tpl-local-085",
+    "name": "投资融资演示",
+    "thumbnail": "/templates/chuangkit_template_00097.webp",
+    "category": "PPT",
+    "width": 800,
+    "height": 1131,
+    "description": "专业PPT设计，精选优质模版助力您的创作",
+    "tags": [
+      "PPT",
+      "演示",
+      "汇报",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 3494
+  },
+  {
+    "id": "tpl-local-086",
+    "name": "科技风格名片",
+    "thumbnail": "/templates/chuangkit_template_00098.webp",
+    "category": "名片",
+    "width": 1920,
+    "height": 1080,
+    "description": "专业名片设计，精选优质模版助力您的创作",
+    "tags": [
+      "名片",
+      "商务",
+      "个人",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 3562
+  },
+  {
+    "id": "tpl-local-087",
+    "name": "品牌活动邀请",
+    "thumbnail": "/templates/chuangkit_template_00099.webp",
+    "category": "邀请函",
+    "width": 500,
+    "height": 500,
+    "description": "专业邀请函设计，精选优质模版助力您的创作",
+    "tags": [
+      "邀请函",
+      "婚礼",
+      "活动",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 2194
+  },
+  {
+    "id": "tpl-local-088",
+    "name": "房地产Logo",
+    "thumbnail": "/templates/chuangkit_template_00100.webp",
+    "category": "Logo",
+    "width": 900,
+    "height": 383,
+    "description": "专业Logo设计，精选优质模版助力您的创作",
+    "tags": [
+      "Logo",
+      "品牌",
+      "标志",
+      "精选",
+      "热门"
+    ],
+    "favoriteCount": 553
+  }
+]
