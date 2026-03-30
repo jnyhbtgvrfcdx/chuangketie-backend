@@ -4,6 +4,7 @@ const state = {
   search: '',
   activeGroup: 'all',
   activeMethod: 'ALL',
+  currentTestItem: null,
 };
 
 const elements = {
@@ -16,9 +17,10 @@ const elements = {
   groupFilters: document.getElementById('groupFilters'),
   methodFilters: document.getElementById('methodFilters'),
   interfaceCardTemplate: document.getElementById('interfaceCardTemplate'),
+  testModal: document.getElementById('testModal'),
 };
 
-const METHOD_ORDER = ['ALL', 'GET', 'POST', 'DELETE'];
+const METHOD_ORDER = ['ALL', 'GET', 'POST', 'PUT', 'DELETE'];
 
 async function bootstrap() {
   bindEvents();
@@ -46,6 +48,13 @@ function bindEvents() {
   elements.searchInput.addEventListener('input', (event) => {
     state.search = event.target.value.trim().toLowerCase();
     render();
+  });
+
+  // 点击遮罩层关闭弹窗
+  elements.testModal.addEventListener('click', (e) => {
+    if (e.target === elements.testModal) {
+      closeTestModal();
+    }
   });
 }
 
@@ -82,7 +91,7 @@ function renderChipGroup(container, items, activeValue, onClick) {
 function getFilteredInterfaces() {
   return state.interfaces.filter((item) => {
     const matchesGroup = state.activeGroup === 'all' || item.group === state.activeGroup;
-    const matchesMethod = state.activeMethod === 'ALL' || item.method === state.activeMethod;
+    const matchesMethod = state.activeMethod === 'ALL' || item.method === item.activeMethod;
     const matchesSearch = !state.search || [item.title, item.path, item.method, item.group, item.description]
       .join(' ')
       .toLowerCase()
@@ -197,7 +206,6 @@ function createInterfaceCard(item) {
         copyLinkBtn.innerHTML = '<span class="btn-icon">📋</span> 复制链接';
       }, 2000);
     } catch (err) {
-      // 降级方案
       const textArea = document.createElement('textarea');
       textArea.value = fullUrl;
       document.body.appendChild(textArea);
@@ -211,105 +219,10 @@ function createInterfaceCard(item) {
     }
   });
 
-  // 测试接口功能
-  testApiBtn.addEventListener('click', async (e) => {
+  // 测试接口功能 - 打开弹窗
+  testApiBtn.addEventListener('click', (e) => {
     e.stopPropagation();
-    testResult.style.display = 'block';
-    testResult.className = 'test-result testing';
-    testResult.innerHTML = '<span class="loading">⏳</span> 正在测试接口...';
-    testApiBtn.disabled = true;
-
-    const startTime = Date.now();
-    
-    try {
-      const options = {
-        method: item.method,
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      };
-
-      // 如果是 POST 请求且有请求体示例，则使用示例数据
-      if (item.method === 'POST' && item.requestBodyExample) {
-        options.body = JSON.stringify(item.requestBodyExample);
-      }
-
-      const response = await fetch(item.path, options);
-      const endTime = Date.now();
-      const duration = endTime - startTime;
-      
-      let responseData;
-      const contentType = response.headers.get('content-type');
-      if (contentType && contentType.includes('application/json')) {
-        responseData = await response.json();
-      } else {
-        responseData = await response.text();
-      }
-
-      if (response.ok) {
-        testResult.className = 'test-result success';
-        testResult.innerHTML = `
-          <div class="test-header">
-            <span class="status-icon">✅</span>
-            <span class="status-text">接口可用</span>
-            <span class="duration">${duration}ms</span>
-          </div>
-          <div class="test-detail">
-            <div class="detail-row">
-              <span class="label">状态码：</span>
-              <span class="value status-${response.status}">${response.status} ${response.statusText}</span>
-            </div>
-            <div class="detail-row">
-              <span class="label">响应数据：</span>
-              <pre class="response-preview">${typeof responseData === 'object' ? JSON.stringify(responseData, null, 2) : responseData}</pre>
-            </div>
-          </div>
-        `;
-      } else {
-        testResult.className = 'test-result warning';
-        testResult.innerHTML = `
-          <div class="test-header">
-            <span class="status-icon">⚠️</span>
-            <span class="status-text">接口返回错误</span>
-            <span class="duration">${duration}ms</span>
-          </div>
-          <div class="test-detail">
-            <div class="detail-row">
-              <span class="label">状态码：</span>
-              <span class="value status-${response.status}">${response.status} ${response.statusText}</span>
-            </div>
-            <div class="detail-row">
-              <span class="label">响应数据：</span>
-              <pre class="response-preview">${typeof responseData === 'object' ? JSON.stringify(responseData, null, 2) : responseData}</pre>
-            </div>
-          </div>
-        `;
-      }
-    } catch (error) {
-      const endTime = Date.now();
-      const duration = endTime - startTime;
-      
-      testResult.className = 'test-result error';
-      testResult.innerHTML = `
-        <div class="test-header">
-          <span class="status-icon">❌</span>
-          <span class="status-text">接口不可用</span>
-          <span class="duration">${duration}ms</span>
-        </div>
-        <div class="test-detail">
-          <div class="detail-row">
-            <span class="label">错误信息：</span>
-            <span class="value error-msg">${error.message}</span>
-          </div>
-          <div class="detail-row">
-            <span class="label">可能原因：</span>
-            <span class="value">网络错误、服务器未启动或接口不存在</span>
-          </div>
-        </div>
-      `;
-    }
-
-    testApiBtn.disabled = false;
+    openTestModal(item, testResult);
   });
 
   return fragment;
@@ -331,5 +244,251 @@ function fillDetailList(listElement, items, emptyText) {
     listElement.appendChild(li);
   });
 }
+
+// ==================== 测试弹窗功能 ====================
+
+function openTestModal(item, testResultEl) {
+  state.currentTestItem = item;
+  state.testResultEl = testResultEl;
+
+  document.getElementById('modalPath').textContent = item.path;
+  document.getElementById('modalMethod').textContent = item.method;
+  document.getElementById('modalMethod').className = `method-tag ${item.method.toLowerCase()}`;
+
+  // 路径参数输入
+  const pathParamsSection = document.getElementById('pathParamsSection');
+  const pathParamsInputs = document.getElementById('pathParamsInputs');
+  
+  if (item.pathParams && item.pathParams.length > 0) {
+    pathParamsSection.style.display = 'block';
+    pathParamsInputs.innerHTML = item.pathParams.map(param => `
+      <div class="param-input-group">
+        <label>${param.name}${param.required ? ' <span class="required">*</span>' : ''}</label>
+        <input type="text" data-param-type="path" data-param-name="${param.name}" 
+               placeholder="${param.description}" class="param-input" />
+      </div>
+    `).join('');
+  } else {
+    pathParamsSection.style.display = 'none';
+  }
+
+  // 查询参数输入
+  const queryParamsSection = document.getElementById('queryParamsSection');
+  const queryParamsInputs = document.getElementById('queryParamsInputs');
+  
+  if (item.queryParams && item.queryParams.length > 0) {
+    queryParamsSection.style.display = 'block';
+    queryParamsInputs.innerHTML = item.queryParams.map(param => `
+      <div class="param-input-group">
+        <label>${param.name}${param.required ? ' <span class="required">*</span>' : ''}</label>
+        <input type="text" data-param-type="query" data-param-name="${param.name}" 
+               placeholder="${param.description}" class="param-input" />
+      </div>
+    `).join('');
+  } else {
+    queryParamsSection.style.display = 'none';
+  }
+
+  // 请求体输入
+  const bodySection = document.getElementById('bodySection');
+  const bodyInput = document.getElementById('bodyInput');
+  
+  if (['POST', 'PUT'].includes(item.method) && item.requestBodyExample) {
+    bodySection.style.display = 'block';
+    bodyInput.value = JSON.stringify(item.requestBodyExample, null, 2);
+  } else if (['POST', 'PUT'].includes(item.method)) {
+    bodySection.style.display = 'block';
+    bodyInput.value = '{\n  \n}';
+  } else {
+    bodySection.style.display = 'none';
+  }
+
+  // 认证 Token 输入
+  const authSection = document.getElementById('authSection');
+  
+  if (item.authRequired) {
+    authSection.style.display = 'block';
+    document.getElementById('authTokenInput').value = 'mock-token-test-user';
+  } else {
+    authSection.style.display = 'none';
+  }
+
+  // 显示弹窗
+  elements.testModal.style.display = 'flex';
+}
+
+function closeTestModal() {
+  elements.testModal.style.display = 'none';
+  state.currentTestItem = null;
+}
+
+async function executeTest() {
+  const item = state.currentTestItem;
+  if (!item) return;
+
+  const testResultEl = state.testResultEl;
+  
+  // 收集路径参数
+  let finalPath = item.path;
+  const pathInputs = document.querySelectorAll('[data-param-type="path"]');
+  pathInputs.forEach(input => {
+    const paramName = input.getAttribute('data-param-name');
+    const paramValue = input.value || 'test-id';
+    finalPath = finalPath.replace(`:${paramName}`, paramValue);
+  });
+
+  // 收集查询参数
+  const queryParams = [];
+  const queryInputs = document.querySelectorAll('[data-param-type="query"]');
+  queryInputs.forEach(input => {
+    const paramName = input.getAttribute('data-param-name');
+    const paramValue = input.value;
+    if (paramValue) {
+      queryParams.push(`${paramName}=${encodeURIComponent(paramValue)}`);
+    }
+  });
+  
+  if (queryParams.length > 0) {
+    finalPath += '?' + queryParams.join('&');
+  }
+
+  // 收集请求体
+  let requestBody = null;
+  if (['POST', 'PUT'].includes(item.method)) {
+    const bodyInput = document.getElementById('bodyInput').value.trim();
+    if (bodyInput) {
+      try {
+        requestBody = JSON.parse(bodyInput);
+      } catch (e) {
+        alert('请求体 JSON 格式错误：' + e.message);
+        return;
+      }
+    }
+  }
+
+  // 收集认证 Token
+  const authSection = document.getElementById('authSection');
+  const headers = {
+    'Content-Type': 'application/json',
+  };
+  
+  if (authSection.style.display !== 'none') {
+    const token = document.getElementById('authTokenInput').value.trim();
+    if (token) {
+      headers['Authorization'] = `Bearer ${token}`;
+    }
+  }
+
+  // 关闭弹窗
+  closeTestModal();
+
+  // 显示测试中状态
+  testResultEl.style.display = 'block';
+  testResultEl.className = 'test-result testing';
+  testResultEl.innerHTML = '<span class="loading">⏳</span> 正在测试接口...';
+
+  const startTime = Date.now();
+
+  try {
+    const options = {
+      method: item.method,
+      headers,
+    };
+
+    if (requestBody) {
+      options.body = JSON.stringify(requestBody);
+    }
+
+    const response = await fetch(finalPath, options);
+    const endTime = Date.now();
+    const duration = endTime - startTime;
+
+    let responseData;
+    const contentType = response.headers.get('content-type');
+    if (contentType && contentType.includes('application/json')) {
+      responseData = await response.json();
+    } else {
+      responseData = await response.text();
+    }
+
+    if (response.ok) {
+      testResultEl.className = 'test-result success';
+      testResultEl.innerHTML = `
+        <div class="test-header">
+          <span class="status-icon">✅</span>
+          <span class="status-text">接口可用</span>
+          <span class="duration">${duration}ms</span>
+        </div>
+        <div class="test-detail">
+          <div class="detail-row">
+            <span class="label">请求路径：</span>
+            <code class="value">${finalPath}</code>
+          </div>
+          <div class="detail-row">
+            <span class="label">状态码：</span>
+            <span class="value status-${response.status}">${response.status} ${response.statusText}</span>
+          </div>
+          <div class="detail-row">
+            <span class="label">响应数据：</span>
+            <pre class="response-preview">${typeof responseData === 'object' ? JSON.stringify(responseData, null, 2) : responseData}</pre>
+          </div>
+        </div>
+      `;
+    } else {
+      testResultEl.className = 'test-result warning';
+      testResultEl.innerHTML = `
+        <div class="test-header">
+          <span class="status-icon">⚠️</span>
+          <span class="status-text">接口返回错误</span>
+          <span class="duration">${duration}ms</span>
+        </div>
+        <div class="test-detail">
+          <div class="detail-row">
+            <span class="label">请求路径：</span>
+            <code class="value">${finalPath}</code>
+          </div>
+          <div class="detail-row">
+            <span class="label">状态码：</span>
+            <span class="value status-${response.status}">${response.status} ${response.statusText}</span>
+          </div>
+          <div class="detail-row">
+            <span class="label">响应数据：</span>
+            <pre class="response-preview">${typeof responseData === 'object' ? JSON.stringify(responseData, null, 2) : responseData}</pre>
+          </div>
+        </div>
+      `;
+    }
+  } catch (error) {
+    const endTime = Date.now();
+    const duration = endTime - startTime;
+
+    testResultEl.className = 'test-result error';
+    testResultEl.innerHTML = `
+      <div class="test-header">
+        <span class="status-icon">❌</span>
+        <span class="status-text">接口不可用</span>
+        <span class="duration">${duration}ms</span>
+      </div>
+      <div class="test-detail">
+        <div class="detail-row">
+          <span class="label">请求路径：</span>
+          <code class="value">${finalPath}</code>
+        </div>
+        <div class="detail-row">
+          <span class="label">错误信息：</span>
+          <span class="value error-msg">${error.message}</span>
+        </div>
+        <div class="detail-row">
+          <span class="label">可能原因：</span>
+          <span class="value">网络错误、服务器未启动或接口不存在</span>
+        </div>
+      </div>
+    `;
+  }
+}
+
+// 暴露全局函数给 HTML 调用
+window.closeTestModal = closeTestModal;
+window.executeTest = executeTest;
 
 bootstrap();

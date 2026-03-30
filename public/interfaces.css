@@ -576,6 +576,226 @@ body {
   50% { opacity: 0.5; }
 }
 
+/* ==================== 测试弹窗样式 ==================== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 0.2s ease;
+}
+
+.modal-content {
+  background: var(--panel-strong);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 85vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--line);
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: var(--text);
+}
+
+.modal-close {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: var(--muted);
+  font-size: 20px;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.modal-close:hover {
+  background: rgba(255, 122, 122, 0.2);
+  color: #ff7a7a;
+}
+
+.modal-body {
+  padding: 24px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.modal-info {
+  margin-bottom: 20px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.info-row:last-child {
+  margin-bottom: 0;
+}
+
+.info-label {
+  color: var(--muted);
+  font-size: 13px;
+  min-width: 60px;
+}
+
+.info-row code {
+  background: rgba(255, 145, 82, 0.15);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #ffd9c3;
+}
+
+.method-tag {
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.method-tag.get { background: rgba(120, 190, 255, 0.16); color: #8cc8ff; }
+.method-tag.post { background: rgba(135, 217, 160, 0.16); color: #9ae9b3; }
+.method-tag.put { background: rgba(255, 200, 100, 0.16); color: #ffc864; }
+.method-tag.delete { background: rgba(255, 122, 122, 0.16); color: #ff9999; }
+
+.input-section {
+  margin-bottom: 20px;
+}
+
+.input-section h4 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+}
+
+.params-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.param-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.param-input-group label {
+  font-size: 13px;
+  color: var(--text);
+}
+
+.param-input-group label .required {
+  color: #ff7a7a;
+}
+
+.param-input,
+.auth-input,
+.body-textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px 14px;
+  color: var(--text);
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.param-input:focus,
+.auth-input:focus,
+.body-textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(255, 145, 82, 0.15);
+}
+
+.body-textarea {
+  min-height: 150px;
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 16px 24px;
+  border-top: 1px solid var(--line);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary,
+.btn-primary {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--line);
+  color: var(--text);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #ff9152 0%, #ff6b2c 100%);
+  border: none;
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 145, 82, 0.3);
+}
+
+.btn-primary .btn-icon {
+  font-size: 16px;
+}
+
 @media (max-width: 1080px) {
   .layout {
     grid-template-columns: 1fr;
